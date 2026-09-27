@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>
-      Mount Zion Haulage & Logistics — Interstate Cargo Waybills (Lagos to Port
-      Harcourt)
-    </title>
+    <title>Contact Us — Mount Zion Haulage & Logistics</title>
     <meta
       name="description"
-      content="Mount Zion Haulage & Logistics specializes in moving general cargo, commercial shipments, and bulk goods with scheduled 20ft & 40ft container transports from Lagos to Port Harcourt."
+      content="Get in touch with our Lagos loading base in Alaba or our Port Harcourt offloading terminal in D-Line."
     />
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     <link
@@ -185,7 +182,7 @@
         <nav class="hidden lg:flex items-center gap-7 text-sm font-medium">
           <a
             href="{{ route('home') }}"
-            class="transition-colors text-primary font-semibold"
+            class="transition-colors text-muted-foreground hover:text-primary"
             >Home</a
           >
           <a
@@ -205,7 +202,7 @@
           >
           <a
             href="{{ route('contact') }}"
-            class="transition-colors text-muted-foreground hover:text-primary"
+            class="transition-colors text-primary font-semibold"
             >Contact</a
           >
         </nav>
@@ -372,7 +369,11 @@
           </button>
         </div>
         <nav class="mt-6 flex flex-col gap-4 text-sm font-medium">
-          <a href="{{ route('home') }}" class="py-2 text-primary font-bold">Home</a>
+          <a
+            href="{{ route('home') }}"
+            class="py-2 text-muted-foreground hover:text-primary"
+            >Home</a
+          >
           <a
             href="{{ route('about') }}"
             class="py-2 text-muted-foreground hover:text-primary"
@@ -388,11 +389,7 @@
             class="py-2 text-muted-foreground hover:text-primary"
             >FAQ</a
           >
-          <a
-            href="{{ route('contact') }}"
-            class="py-2 text-muted-foreground hover:text-primary"
-            >Contact</a
-          >
+          <a href="{{ route('contact') }}" class="py-2 text-primary font-bold">Contact</a>
           <a
             href="{{ route('track') }}"
             class="py-2 text-muted-foreground hover:text-primary"
@@ -410,185 +407,117 @@
       </div>
     </div>
 
-    <section
-      class="relative overflow-hidden bg-gradient-subtle py-16 lg:py-24 border-b border-border transition-colors"
-    >
-      <div
-        class="container-page grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
-      >
-        <!-- Hero Text -->
-        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div
-            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-red-100 text-red-700 dark:bg-red-950/80 dark:text-red-300 border border-red-200 dark:border-red-900"
+    <main class="flex-grow">
+      <section class="bg-gradient-subtle border-b border-border py-16 md:py-20">
+        <div class="container-page max-w-3xl">
+          <span
+            class="text-xs font-semibold uppercase tracking-widest text-primary"
+            >Contact us</span
           >
-            <span class="h-2 w-2 rounded-full bg-red-600 animate-pulse"></span>
-            Dedicated Lagos ↔ Port Harcourt Cargo Route
-          </div>
-
           <h1
-            class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight font-poppins text-foreground"
+            class="mt-3 text-4xl md:text-5xl font-bold font-poppins leading-tight"
           >
-            Interstate Haulage &
-            <span class="text-gradient-brand">Cargo Waybills</span> You Can
-            Trust
+            We'd love to <span class="text-gradient-brand">hear from you</span>
           </h1>
-
-          <p
-            class="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0"
-          >
-            We accept commercial goods, merchant merchandise, and personal items
-            at our <strong>Alaba Loading Base</strong> and transport them
-            securely in sealed
-            <strong>20-ft & 40-ft containers</strong> directly to our
-            <strong>Port Harcourt Base (D-Line)</strong>.
+          <p class="mt-4 text-lg text-muted-foreground leading-relaxed">
+            Whether it's a quick question or a full trailer booking — call,
+            email or send us a message. We respond during operating hours,
+            Monday to Saturday.
           </p>
-
-          <!-- CTAs -->
-          <div
-            class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2"
-          >
-            <a
-              href="{{ route('quote') }}"
-              class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-white bg-gradient-brand shadow-glow hover:opacity-95 transition-opacity text-center flex items-center justify-center gap-2"
-            >
-              <span>Calculate Waybill Quote</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </a>
-            <a
-              href="{{ route('track') }}"
-              class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold border border-border bg-card hover:bg-surface text-foreground transition-colors text-center flex items-center justify-center gap-2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 text-primary"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                />
-              </svg>
-              <span>Track Your Waybill</span>
-            </a>
-          </div>
-
-          <!-- Feature Highlights -->
-          <div
-            class="pt-6 grid grid-cols-3 gap-4 border-t border-border text-center lg:text-left"
-          >
-            <div>
-              <div
-                class="font-bold text-lg sm:text-xl text-foreground font-poppins"
-              >
-                100%
-              </div>
-              <div class="text-xs text-muted-foreground">
-                Manifested Waybills
-              </div>
-            </div>
-            <div>
-              <div
-                class="font-bold text-lg sm:text-xl text-foreground font-poppins"
-              >
-                20ft & 40ft
-              </div>
-              <div class="text-xs text-muted-foreground">Sealed Containers</div>
-            </div>
-            <div>
-              <div
-                class="font-bold text-lg sm:text-xl text-foreground font-poppins"
-              >
-                Lagos ↔ PHC
-              </div>
-              <div class="text-xs text-muted-foreground">Specialized Route</div>
-            </div>
-          </div>
         </div>
+      </section>
 
-        <!-- Hero Image -->
-        <div class="lg:col-span-5 relative">
+      <!-- 3 Office Info Cards -->
+      <section class="container-page py-12 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
           <div
-            class="relative rounded-3xl overflow-hidden border border-border shadow-2xl bg-card group"
+            class="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-4"
           >
-            <img
-              src="{{ asset('images/hero-truck.jpg') }}"
-              alt="Mount Zion Interstate Cargo Transport"
-              class="w-full h-80 sm:h-96 md:h-105 lg:h-115 object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
-              loading="eager"
-              fetchpriority="high"
-              decoding="async"
-              width="2762"
-              height="1504"
-            />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent pointer-events-none"
-            ></div>
-            <div
-              class="absolute bottom-5 left-5 right-5 sm:bottom-6 sm:left-6 sm:right-6 text-white space-y-2"
+              class="h-12 w-12 rounded-xl bg-gradient-brand text-white flex items-center justify-center shadow-glow"
             >
-              <div
-                class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-red-600/90 backdrop-blur-sm shadow-md"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
-                <span>Daily Cargo Loading</span>
-              </div>
-              <p
-                class="text-xs text-white/90 font-medium leading-relaxed drop-shadow-sm"
-              >
-                From single cartons to bulk merchant freight — every package is
-                safely tagged and waybilled.
+                <path
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                ></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg font-poppins text-foreground">
+                Lagos Office
+              </h3>
+              <p class="text-xs text-muted-foreground mt-1 leading-relaxed">
+                34, Remi Street, By Ukpor Street, Behind St Patrick Catholic
+                Church, Alaba Int'l Mkt., Ojo, Lagos.
               </p>
             </div>
+            <div class="space-y-1 text-xs">
+              <a
+                href="tel:+2348027626893"
+                class="block font-semibold text-foreground hover:text-primary"
+                >0802 762 6893</a
+              >
+              <a
+                href="tel:+2348035027619"
+                class="block font-semibold text-foreground hover:text-primary"
+                >0803 502 7619</a
+              >
+              <a
+                href="tel:+2348033128163"
+                class="block text-muted-foreground hover:text-primary"
+                >0803 312 8163</a
+              >
+              <a
+                href="tel:+2347038427313"
+                class="block text-muted-foreground hover:text-primary"
+                >0703 842 7313</a
+              >
+            </div>
+            <a
+              href="tel:+2348027626893"
+              class="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
+            >
+              <span>Call Lagos Base</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Core Services Overview -->
-    <section class="py-20 bg-background transition-colors">
-      <div class="container-page space-y-12">
-        <div class="text-center max-w-2xl mx-auto space-y-3">
-          <span
-            class="text-xs uppercase tracking-wider font-bold text-red-600 dark:text-red-400"
-            >What We Do</span
-          >
-          <h2 class="text-3xl font-extrabold font-poppins text-foreground">
-            Dedicated Cargo Services
-          </h2>
-          <p class="text-sm text-muted-foreground">
-            We focus specifically on accepting your goods in Lagos and
-            delivering them promptly to Port Harcourt.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Service 1: Interstate Haulage -->
+          <!-- Card 2 -->
           <div
-            class="p-8 rounded-3xl border border-border bg-card shadow-sm hover:border-primary/40 hover:shadow-md transition-all space-y-4"
+            class="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-4"
           >
             <div
-              class="h-14 w-14 rounded-2xl bg-red-100 dark:bg-red-950/80 text-primary flex items-center justify-center shadow-sm"
+              class="h-12 w-12 rounded-xl bg-gradient-brand text-white flex items-center justify-center shadow-glow"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -597,49 +526,40 @@
                 stroke-linejoin="round"
               >
                 <path
-                  d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
                 ></path>
-                <path d="M15 18H9"></path>
-                <path
-                  d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"
-                ></path>
-                <circle cx="17" cy="18" r="2"></circle>
-                <circle cx="7" cy="18" r="2"></circle>
+                <circle cx="12" cy="10" r="3"></circle>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold font-poppins text-foreground">
-              Interstate Haulage
-            </h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">
-              Specializes in moving general cargo, commercial shipments, and
-              bulk goods, with regular transport routes connecting Lagos and
-              Port Harcourt. We consolidate merchandise into heavy-duty 20ft and
-              40ft container dispatches for reliable long-haul security.
-            </p>
-            <ul class="text-xs space-y-2 text-foreground/80 font-medium">
-              <li class="flex items-center gap-2">
-                ✓ Commercial shipments & merchant stock
-              </li>
-              <li class="flex items-center gap-2">
-                ✓ Heavy equipment, building supplies & bulk sacks
-              </li>
-              <li class="flex items-center gap-2">
-                ✓ Full truck manifest tracking on every freight run
-              </li>
-            </ul>
-          </div>
-
-          <!-- Service 2: Cargo Handling -->
-          <div
-            class="p-8 rounded-3xl border border-border bg-card shadow-sm hover:border-primary/40 hover:shadow-md transition-all space-y-4"
-          >
-            <div
-              class="h-14 w-14 rounded-2xl bg-red-100 dark:bg-red-950/80 text-primary flex items-center justify-center shadow-sm"
+            <div>
+              <h3 class="font-bold text-lg font-poppins text-foreground">
+                Port Harcourt Office
+              </h3>
+              <p class="text-xs text-muted-foreground mt-1 leading-relaxed">
+                No. 29 Kaduna Street, D-Line, Port Harcourt, Rivers State.
+              </p>
+            </div>
+            <div class="space-y-1 text-xs">
+              <a
+                href="tel:+2347067187157"
+                class="block font-semibold text-foreground hover:text-primary"
+                >0706 718 7157</a
+              >
+              <a
+                href="tel:+2347067251317"
+                class="block font-semibold text-foreground hover:text-primary"
+                >0706 725 1317</a
+              >
+            </div>
+            <a
+              href="tel:+2347067187157"
+              class="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
             >
+              <span>Call PHC Base</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -647,163 +567,304 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path
-                  d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
-                ></path>
-                <path d="m3.3 7 8.7 5 8.7-5"></path>
-                <path d="M12 22V12"></path>
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-4"
+          >
+            <div
+              class="h-12 w-12 rounded-xl bg-gradient-brand text-white flex items-center justify-center shadow-glow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold font-poppins text-foreground">
-              Cargo Handling
-            </h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">
-              Secure transport and scheduled delivery of commercial goods and
-              personal items. From delicate electronics and spare parts to
-              individual cartons, our base handlers inspect, seal, and document
-              every item with official waybills.
-            </p>
-            <ul class="text-xs space-y-2 text-foreground/80 font-medium">
-              <li class="flex items-center gap-2">
-                ✓ Electronics, auto parts & fragile consignments
-              </li>
-              <li class="flex items-center gap-2">
-                ✓ Personal parcels, luggage & boxed merchandise
-              </li>
-              <li class="flex items-center gap-2">
-                ✓ Careful warehouse staging & damage-free offloading
-              </li>
-            </ul>
+            <div>
+              <h3 class="font-bold text-lg font-poppins text-foreground">
+                Email & Online
+              </h3>
+              <p class="text-xs text-muted-foreground mt-1 leading-relaxed">
+                We respond promptly to all written booking requests and invoice
+                inquiries.
+              </p>
+            </div>
+            <div class="space-y-1 text-xs">
+              <a
+                href="mailto:mountzionhaulageandlogistics@gmail.com"
+                class="block font-semibold text-foreground hover:text-primary break-all"
+              >
+                mountzionhaulageandlogistics@gmail.com
+              </a>
+              <span class="block text-muted-foreground"
+                >Mon–Fri 8am–6pm · Sat 8am–5pm</span
+              >
+            </div>
+            <a
+              href="mailto:mountzionhaulageandlogistics@gmail.com"
+              class="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
+            >
+              <span>Send Email</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Why Choose Mount Zion (Pillars) -->
-    <section class="py-20 bg-surface border-y border-border transition-colors">
-      <div
-        class="container-page grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
-      >
-        <div class="lg:col-span-5">
+      <!-- Message Form & Map Section -->
+      <section class="container-page py-8 md:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <!-- Form -->
           <div
-            class="rounded-3xl overflow-hidden border border-border shadow-lg"
+            class="lg:col-span-6 rounded-2xl border border-border bg-card p-6 sm:p-8 shadow-sm space-y-6"
           >
-            <img
-              src="{{ asset('images/warehouse.jpg') }}"
-              alt="Mount Zion Cargo Staging Warehouse"
-              class="w-full h-80 sm:h-96 object-cover"
-            />
+            <div>
+              <h2 class="text-2xl font-bold font-poppins text-foreground">
+                Send us a message
+              </h2>
+              <p class="text-xs text-muted-foreground mt-1">
+                Fill in the form and our team will get back to you during
+                operating hours.
+              </p>
+            </div>
+
+            <div
+              id="contact-success-alert"
+              class="hidden p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-sm space-y-1"
+            >
+              <div class="font-bold flex items-center gap-1.5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Message sent successfully!</span>
+              </div>
+              <p class="text-xs">
+                Our dispatch team will get in touch with you shortly by phone or
+                WhatsApp.
+              </p>
+            </div>
+
+            <form id="contact-form" class="space-y-4">
+              <div>
+                <label
+                  class="block text-xs font-medium text-muted-foreground mb-1"
+                  >Full name *</label
+                >
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  required
+                  placeholder="e.g. Chief Emeka Okoro"
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-border bg-surface text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    class="block text-xs font-medium text-muted-foreground mb-1"
+                    >Phone (WhatsApp preferred) *</label
+                  >
+                  <input
+                    type="tel"
+                    id="contact-phone"
+                    name="phone"
+                    required
+                    placeholder="0802 000 0000"
+                    class="w-full px-3.5 py-2.5 rounded-lg border border-border bg-surface text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-xs font-medium text-muted-foreground mb-1"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    placeholder="name@business.com"
+                    class="w-full px-3.5 py-2.5 rounded-lg border border-border bg-surface text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  class="block text-xs font-medium text-muted-foreground mb-1"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  placeholder="e.g. Trailer booking for 40ft container next Tuesday"
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-border bg-surface text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+
+              <div>
+                <label
+                  class="block text-xs font-medium text-muted-foreground mb-1"
+                  >Message *</label
+                >
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Describe your cargo, loading schedule or inquiry..."
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-border bg-surface text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full py-3.5 rounded-xl bg-gradient-brand text-white font-semibold text-sm flex items-center justify-center gap-2 shadow-glow hover:opacity-95 transition-opacity cursor-pointer"
+              >
+                <span>Send message</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Interactive Map & Office Selector -->
+          <div class="lg:col-span-6 space-y-6">
+            <div
+              class="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-4"
+            >
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <h3 class="font-bold font-poppins text-lg text-foreground">
+                  Base Locations & Maps
+                </h3>
+                <div
+                  class="flex items-center gap-1.5 p-1 rounded-lg bg-surface border border-border text-xs"
+                >
+                  <button
+                    type="button"
+                    id="map-tab-phc"
+                    class="px-3.5 py-1.5 rounded-md font-semibold bg-primary text-primary-foreground shadow-sm cursor-pointer transition-all"
+                  >
+                    Port Harcourt
+                  </button>
+                  <button
+                    type="button"
+                    id="map-tab-lagos"
+                    class="px-3.5 py-1.5 rounded-md font-semibold bg-transparent text-muted-foreground hover:text-foreground cursor-pointer transition-all"
+                  >
+                    Lagos (Alaba)
+                  </button>
+                </div>
+              </div>
+
+              <div class="space-y-1">
+                <h4
+                  id="base-location-title"
+                  class="font-bold text-foreground text-base"
+                >
+                  Port Harcourt Offloading Base (D-Line)
+                </h4>
+                <p
+                  id="base-location-address"
+                  class="text-xs text-muted-foreground"
+                >
+                  No. 29 Kaduna Street, D-Line, Port Harcourt, Rivers State.
+                </p>
+              </div>
+
+              <div
+                class="rounded-xl overflow-hidden border border-border h-72 sm:h-80 relative bg-surface"
+              >
+                <iframe
+                  id="base-map-iframe"
+                  src="https://maps.google.com/maps?q=29+Kaduna+Street+D-line+Port+Harcourt&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  class="w-full h-full border-0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <!-- WhatsApp Chat Callout -->
+              <div
+                class="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 flex items-center justify-between gap-4"
+              >
+                <div>
+                  <span
+                    class="font-bold text-sm text-emerald-900 dark:text-emerald-300 block"
+                    >Prefer to chat on WhatsApp?</span
+                  >
+                  <span class="text-xs text-emerald-700 dark:text-emerald-400"
+                    >Direct instant messaging for quick load inquiries.</span
+                  >
+                </div>
+                <a
+                  href="https://wa.me/2348027626893"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shrink-0 transition-colors"
+                >
+                  Open WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="lg:col-span-7 space-y-6">
-          <span
-            class="text-xs uppercase tracking-wider font-bold text-red-600 dark:text-red-400"
-            >Reliability & Security</span
-          >
-          <h2 class="text-3xl font-extrabold font-poppins text-foreground">
-            The Mount Zion Waybill Standard
-          </h2>
-          <p class="text-sm text-muted-foreground leading-relaxed">
-            Unlike informal road loaders, Mount Zion operates organized terminal
-            bases with verified manifests, digital tracking, and secure
-            container seals.
-          </p>
-
-          <div class="space-y-4">
-            <div
-              class="flex items-start gap-4 p-4 rounded-2xl bg-card border border-border"
-            >
-              <div
-                class="h-10 w-10 rounded-xl bg-gradient-brand text-white flex items-center justify-center font-bold text-sm shrink-0"
-              >
-                1
-              </div>
-              <div>
-                <h4 class="font-bold text-base text-foreground font-poppins">
-                  Transparent Waybill & Manifest
-                </h4>
-                <p class="text-xs text-muted-foreground mt-0.5">
-                  Every package is cataloged with weight, receiver phone, and
-                  unique waybill ID on the truck manifest.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="flex items-start gap-4 p-4 rounded-2xl bg-card border border-border"
-            >
-              <div
-                class="h-10 w-10 rounded-xl bg-gradient-brand text-white flex items-center justify-center font-bold text-sm shrink-0"
-              >
-                2
-              </div>
-              <div>
-                <h4 class="font-bold text-base text-foreground font-poppins">
-                  20-ft & 40-ft Sealed Protection
-                </h4>
-                <p class="text-xs text-muted-foreground mt-0.5">
-                  All goods travel inside locked steel containers, shielding
-                  your products from weather, dust, and highway loss.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="flex items-start gap-4 p-4 rounded-2xl bg-card border border-border"
-            >
-              <div
-                class="h-10 w-10 rounded-xl bg-gradient-brand text-white flex items-center justify-center font-bold text-sm shrink-0"
-              >
-                3
-              </div>
-              <div>
-                <h4 class="font-bold text-base text-foreground font-poppins">
-                  Direct Base Offloading at D-Line, PHC
-                </h4>
-                <p class="text-xs text-muted-foreground mt-0.5">
-                  Prompt arrival notifications allow your receiver to pick up
-                  safely at No. 29 Kaduna Street, D-Line, Port Harcourt.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action Banner -->
-    <section
-      class="py-16 bg-gradient-brand text-white text-center relative overflow-hidden"
-    >
-      <div class="container-page space-y-6 relative z-10">
-        <h2 class="text-3xl sm:text-4xl font-extrabold font-poppins">
-          Ready to Send Your Cargo to Port Harcourt?
-        </h2>
-        <p class="text-sm sm:text-base text-white/90 max-w-xl mx-auto">
-          Drop off your goods today at our Alaba Loading Base in Lagos or
-          calculate an estimated shipping rate in 30 seconds.
-        </p>
-        <div
-          class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2"
-        >
-          <a
-            href="{{ route('quote') }}"
-            class="px-8 py-3.5 rounded-xl font-bold text-primary bg-white hover:bg-white/90 transition-colors shadow-lg"
-          >
-            Get Cargo Quote
-          </a>
-          <a
-            href="{{ route('contact') }}"
-            class="px-8 py-3.5 rounded-xl font-bold text-white border border-white/40 hover:bg-white/10 transition-colors"
-          >
-            Contact Lagos Base
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Section -->
         <!-- Universal Footer -->
     <footer class="bg-surface border-t border-border mt-auto transition-colors">
       <div class="container-page py-16">
@@ -1020,6 +1081,6 @@
     <script src="{{ asset('js/theme.js') }}"></script>
     <script src="{{ asset('js/navigation.js') }}"></script>
     <script src="{{ asset('js/store.js') }}"></script>
-    <script src="{{ asset('js/pages/home.js') }}"></script>
+    <script src="{{ asset('js/pages/contact.js') }}"></script>
   </body>
 </html>
