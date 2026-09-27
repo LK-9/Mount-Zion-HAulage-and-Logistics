@@ -1,24 +1,71 @@
-*.log
-.DS_Store
+# Environment & Credentials
 .env
 .env.backup
 .env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
+.env.local
+.env.*.local
 /auth.json
+
+# Dependencies
 /node_modules
+/vendor
+
+# Build Assets
 /public/build
 /public/hot
 /public/storage
+/.vite
+
+# Storage & Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 /storage/*.key
 /storage/pail
-/vendor
+
+# Testing & Cache
+/.phpunit.cache
+.phpunit.result.cache
+/.pest
+/.pest.cache
+/coverage
+.php-cs-fixer.cache
+.phpactor.json
+
+# Database
+database/*.sqlite
+database/*.sqlite-journal
+database/*.sqlite-shm
+database/*.sqlite-wal
+
+# IDEs & Editors
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+*.sublime-project
+*.sublime-workspace
 Homestead.json
 Homestead.yaml
+
+# OS Artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Scratch & Local Imports
+/scratch
+/scratch/
+/Mount_Zion Frontend
+/Mount_Zion Frontend/
+/imports
+/imports/
+
